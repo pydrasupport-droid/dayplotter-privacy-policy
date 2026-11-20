@@ -26,8 +26,16 @@
         .header {
             background: linear-gradient(135deg, #5367f5, #29b9c2);
             color: white;
-            padding: 55px 20px;
+            padding: 45px 20px;
             text-align: center;
+        }
+
+        .logo {
+            width: 88px;
+            height: 88px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 15px;
         }
 
         .header h1 {
@@ -112,7 +120,12 @@
 
         @media (max-width: 600px) {
             .header {
-                padding: 40px 15px;
+                padding: 35px 15px;
+            }
+
+            .logo {
+                width: 76px;
+                height: 76px;
             }
 
             .header h1 {
@@ -134,6 +147,11 @@
 <body>
 
 <header class="header">
+    <img
+        src="logo.png"
+        alt="Dayweave logo"
+        class="logo"
+    >
     <h1>Dayweave</h1>
     <p>Plan the day that fits.</p>
 </header>
